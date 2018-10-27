@@ -407,11 +407,11 @@ public class Éléphant {}
 
 |Name|Default Value|Description|Multivalued|
 |----|-------------|-----------|-----------|
-|classPattern|[A-Z][a-zA-Z0-9]*|Regex which applies to concrete class names|no|
-|abstractClassPattern|[A-Z][a-zA-Z0-9]*|Regex which applies to abstract class names|no|
-|interfacePattern|[A-Z][a-zA-Z0-9]*|Regex which applies to interface names|no|
-|enumPattern|[A-Z][a-zA-Z0-9]*|Regex which applies to enum names|no|
-|annotationPattern|[A-Z][a-zA-Z0-9]*|Regex which applies to annotation names|no|
+|classPattern|[A-Z][a-zA-Z0-9]\*|Regex which applies to concrete class names|no|
+|abstractClassPattern|[A-Z][a-zA-Z0-9]\*|Regex which applies to abstract class names|no|
+|interfacePattern|[A-Z][a-zA-Z0-9]\*|Regex which applies to interface names|no|
+|enumPattern|[A-Z][a-zA-Z0-9]\*|Regex which applies to enum names|no|
+|annotationPattern|[A-Z][a-zA-Z0-9]\*|Regex which applies to annotation names|no|
 |utilityClassPattern|[A-Z][a-zA-Z0-9]+(Utils?\|Helper)|Regex which applies to utility class names|no|
 
 **Use this rule by referencing it:**
@@ -460,7 +460,7 @@ public class Foo {
 
 |Name|Default Value|Description|Multivalued|
 |----|-------------|-----------|-----------|
-|regex|\/\*\s+(default\|package)\s+\*\/|Regular expression|no|
+|regex|\/\\*\s+(default\|package)\s+\\*\/|Regular expression|no|
 
 **Use this rule by referencing it:**
 ``` xml
@@ -798,12 +798,12 @@ class Foo {
 
 |Name|Default Value|Description|Multivalued|
 |----|-------------|-----------|-----------|
-|publicConstantPattern|[A-Z][A-Z_0-9]*|Regex which applies to public constant names|no|
-|constantPattern|[A-Z][A-Z_0-9]*|Regex which applies to non-public static final field names|no|
-|enumConstantPattern|[A-Z][A-Z_0-9]*|Regex which applies to enum constant names|no|
-|finalFieldPattern|[a-z][a-zA-Z0-9]*|Regex which applies to final field names|no|
-|staticFieldPattern|[a-z][a-zA-Z0-9]*|Regex which applies to static field names|no|
-|defaultFieldPattern|[a-z][a-zA-Z0-9]*|Regex which applies to field names|no|
+|publicConstantPattern|[A-Z][A-Z_0-9]\*|Regex which applies to public constant names|no|
+|constantPattern|[A-Z][A-Z_0-9]\*|Regex which applies to non-public static final field names|no|
+|enumConstantPattern|[A-Z][A-Z_0-9]\*|Regex which applies to enum constant names|no|
+|finalFieldPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to final field names|no|
+|staticFieldPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to static field names|no|
+|defaultFieldPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to field names|no|
 |exclusions|serialVersionUID|Names of fields to whitelist.|yes. Delimiter is '\|'.|
 
 **Use this rule by referencing it:**
@@ -915,10 +915,10 @@ class Foo {
 
 |Name|Default Value|Description|Multivalued|
 |----|-------------|-----------|-----------|
-|methodParameterPattern|[a-z][a-zA-Z0-9]*|Regex which applies to formal parameter names|no|
-|finalMethodParameterPattern|[a-z][a-zA-Z0-9]*|Regex which applies to final formal parameter names|no|
-|lambdaParameterPattern|[a-z][a-zA-Z0-9]*|Regex which applies to inferred-type lambda parameter names|no|
-|explicitLambdaParameterPattern|[a-z][a-zA-Z0-9]*|Regex which applies to explicitly-typed lambda parameter names|no|
+|methodParameterPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to formal parameter names|no|
+|finalMethodParameterPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to final formal parameter names|no|
+|lambdaParameterPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to inferred-type lambda parameter names|no|
+|explicitLambdaParameterPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to explicitly-typed lambda parameter names|no|
 
 **Use this rule by referencing it:**
 ``` xml
@@ -1294,9 +1294,9 @@ class Foo {
 
 |Name|Default Value|Description|Multivalued|
 |----|-------------|-----------|-----------|
-|localVarPattern|[a-z][a-zA-Z0-9]*|Regex which applies to non-final local variable names|no|
-|finalVarPattern|[a-z][a-zA-Z0-9]*|Regex which applies to final local variable names|no|
-|catchParameterPattern|[a-z][a-zA-Z0-9]*|Regex which applies to exception block parameter names|no|
+|localVarPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to non-final local variable names|no|
+|finalVarPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to final local variable names|no|
+|catchParameterPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to exception block parameter names|no|
 
 **Use this rule by referencing it:**
 ``` xml
@@ -1435,11 +1435,11 @@ public class Foo {
 |Name|Default Value|Description|Multivalued|
 |----|-------------|-----------|-----------|
 |checkNativeMethods|true|<span style="border-radius: 0.25em; color: #fff; padding: 0.2em 0.6em 0.3em; display: inline; background-color: #d9534f; font-size: 75%;">Deprecated</span>  Check native methods|no|
-|methodPattern|[a-z][a-zA-Z0-9]*|Regex which applies to instance method names|no|
-|staticPattern|[a-z][a-zA-Z0-9]*|Regex which applies to static method names|no|
-|nativePattern|[a-z][a-zA-Z0-9]*|Regex which applies to native method names|no|
-|junit3TestPattern|test[A-Z0-9][a-zA-Z0-9]*|Regex which applies to JUnit 3 test method names|no|
-|junit4TestPattern|[a-z][a-zA-Z0-9]*|Regex which applies to JUnit 4 test method names|no|
+|methodPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to instance method names|no|
+|staticPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to static method names|no|
+|nativePattern|[a-z][a-zA-Z0-9]\*|Regex which applies to native method names|no|
+|junit3TestPattern|test[A-Z0-9][a-zA-Z0-9]\*|Regex which applies to JUnit 3 test method names|no|
+|junit4TestPattern|[a-z][a-zA-Z0-9]\*|Regex which applies to JUnit 4 test method names|no|
 
 **Use this rule by referencing it:**
 ``` xml
@@ -2278,5 +2278,4 @@ while (true) {  // preferred approach
 ``` xml
 <rule ref="category/java/codestyle.xml/WhileLoopsMustUseBraces" />
 ```
-
 
