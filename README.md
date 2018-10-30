@@ -8,6 +8,9 @@
 |sampleRegexProperty2|\[a-z\]\*|The property is of type regex|no|
 |sampleRegexProperty3|\\s+|The property is of type regex|no|
 |sampleRegexProperty4|\_dd\_|The property is of type regex|no|
-|sampleRegexProperty4|[0-9]{1,3}|The property is of type regex|no|
-|sampleRegexProperty4|\\b|The property is of type regex|no|
-|sampleRegexProperty4|\\n|The property is of type regex|no|
+|sampleRegexProperty5|\[0-9\]{1,3}|The property is of type regex|no|
+|sampleRegexProperty6|\\b|The property is of type regex|no|
+|sampleRegexProperty7|\\n|The property is of type regex|no|
+|cursorPattern|[a-zA-Z_0-9]{5,}|The pattern used for the curosr loop variable|no|
+|indexPattern|[a-zA-Z_0-9]{5,}|The pattern used for the index loop variable|no|
+
