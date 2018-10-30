@@ -8,3 +8,6 @@
 |sampleRegexProperty2|\[a-z\]\*|The property is of type regex|no|
 |sampleRegexProperty3|\\s+|The property is of type regex|no|
 |sampleRegexProperty4|\_dd\_|The property is of type regex|no|
+|sampleRegexProperty4|[0-9]{1,3}|The property is of type regex|no|
+|sampleRegexProperty4|\\b|The property is of type regex|no|
+|sampleRegexProperty4|\\n|The property is of type regex|no|
