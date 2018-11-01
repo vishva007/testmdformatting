@@ -13,4 +13,5 @@
 |sampleRegexProperty7|\\n|The property is of type regex|no|
 |cursorPattern|[a-zA-Z_0-9]{5,}|The pattern used for the curosr loop variable|no|
 |indexPattern|[a-zA-Z_0-9]{5,}|The pattern used for the index loop variable|no|
+|indexPattern|+33+|The pattern used for the index loop variable|no|
 
